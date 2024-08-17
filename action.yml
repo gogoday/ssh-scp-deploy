@@ -1,6 +1,6 @@
-name: 'SCP deploy action'
+name: 'SCP deploy action by gogoday'
 description: 'Action to send dist files to a remote server with scp command'
-author: 'Fabricio Nogueira'
+author: 'gogoday'
 inputs:
   src:
     description: 'Sorce dir to deploy'
@@ -23,6 +23,9 @@ inputs:
     required: true
   options:
     description: 'Extra options for scp'
+    required: false
+  cmd:
+    description: 'run cmd'
     required: false
 runs:
   using: 'docker'
